@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box
+}
+
+#search {
+    outline: none;
+    border: none;
+    display: inline-block
+}
+
+#burgundy {
+    color: rgb(153, 40, 59)
+}
+
+#orange,
+select,
+
+.fa-user-o,
+.fa-shopping-cart {
+    font-size: 20px;
+    padding: 4px
+}
+
+.form-group {
+    margin-bottom: 5px
+}
+
+label {
+    padding-left: 10px
+}
+
+.form-group:last-child {
+    margin-bottom: 0
+}
+
+h6 {
+    margin-bottom: 0px
+}
+
+#sort {
+    outline: none;
+    border: none
+}
+
+#card-bodyProdutos {
+    padding: 8px
+}
+
+.sign {
+    width: 25px;
+    height: 25px
+}
+
+.discount {
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 65px;
+    position: absolute;
+    top: 2%
+}
+
+@media(min-width:1200px) {
+    #search {
+        width: 300px;
+        padding: 5px;
+        padding-left: 20px
+    }
+
+    .search-nav-item {
+        margin-left: 400px;
+        width: 350px
+    }
+
+    .fa-user-o {
+        margin-left: 300px
+    }
+
+    .text {
+        display: none
+    }
+
+    .fa-user-o,
+    .fa-shopping-cart {
+        font-size: 20px;
+        padding-left: 20px
+    }
+
+    #sidebarHome {
+        width: 20%;
+        padding: 20px;
+        float: left
+    }
+
+    #products {
+        width: 80%;
+        padding: 10px;
+        margin: 0;
+        float: right
+    }
+
+    #cardProdutos {
+        width: 200px;
+        height: 230px;
+        border: none
+    }
+
+    .card-img-top {
+        width: 295px;
+        height: 200px;
+        border-radius: 10px
+    }
+
+    del {
+        padding-right: 2px
+    }
+
+    .filter,
+    #mobile-filter {
+        display: none
+    }
+}
+
+
+
+.text-muted{
+    text-align: center;
+}
+
+#tituloLivroHome,
+div{
+    font-size: 13px;
+    align: center;
+}
+
+
+#cardPagamento{
+    align-items: center;
+    width: 700px;
+    height: 150px;
+}
+
+
+#tabelaDetalhesLivro
+{
+    font-size: 14px;
+    font-family: Helvetica;
+    padding: 400px;
+
+}
+
+
+#cardDetalhesLivro {
+    padding: 30px;
+    border-radius: 15px;
+    width:900px;
+    font-size: 15px;
+}
+
+
+#grafico{
+    align-items: center;
+    font-size: 13px;
+}
+
+.tituloTabelaLiv{
+    min-width: 150px;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="livraria-les">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Inserir o full qualified name das classes que serão persistidas -->
+        <class>br.com.fatec.ellentex.livrariales.dominio.BandeiraCartao</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Cartao</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Cidade</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Cliente</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Endereco</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Estado</class>
+        <!-- <class>br.com.fatec.ellentex.livrariales.dominio.FormaPagamento</class>-->
+        <class>br.com.fatec.ellentex.livrariales.dominio.Pais</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Ranking</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Telefone</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.TipoEndereco</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.UsuarioAdmin</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.UsuarioComum</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Livro</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Dimensao</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Precificacao</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Produto</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Categoria</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.CategoriaLivro</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.CategoriaAtivacao</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.CategoriaInativacao</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Estoque</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.ItemEstoque</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.ItemLivro</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.PedidoCompra</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.CupomDesconto</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.CupomTroca</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.PedidoTroca</class>
+        <class>br.com.fatec.ellentex.livrariales.dominio.Log</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+<!--            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/livrariales?useTimezone=true&amp;serverTimezone=UTC" />-->
+<!--            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/livrariales?serverTimezone=UTC" />-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/livrariales" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="root" />
+
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+<!--            <property name="hibernate.show_sql" value="true" />-->
+            <property name="hibernate.format_sql" value="true" />
+             <property name="hibernate.hbm2ddl.auto" value= "update" />
+
+            <property name="hibernate.connection.useUnicode" value="true" />
+            <property name="hibernate.connection.characterEncoding" value="UTF-8" />
+            <!-- characterEncoding=utf8 -->
+        </properties>
+
+    </persistence-unit>
+</persistence>

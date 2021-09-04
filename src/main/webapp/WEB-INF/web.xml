@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<!-- <filter>
+     <filter-name>Filtro Acesso</filter-name>
+     <filter-class>br.com.fatec.ellentex.livrariales.controle.web.FiltroAcesso</filter-class>
+ </filter>
+
+ <filter-mapping>
+     <filter-name>Filtro Acesso</filter-name>
+     <url-pattern>/admin/*</url-pattern>
+ </filter-mapping> -->
+
+
+<welcome-file-list>
+   <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+<listener>
+   <listener-class>br.com.fatec.ellentex.livrariales.controle.web.ListenerServlet</listener-class>
+</listener>
+
+<listener>
+   <description>sessionListener</description>
+   <listener-class>br.com.fatec.ellentex.livrariales.controle.web.SessionListener</listener-class>
+</listener>
+
+<context-param>
+   <param-name>log4jConfiguration</param-name>
+   <param-value>log4j2.xml</param-value>
+</context-param>
+
+</web-app>
